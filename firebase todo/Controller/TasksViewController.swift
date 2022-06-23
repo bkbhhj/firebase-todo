@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -16,7 +17,7 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
          let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         cell?.backgroundColor = .clear
-        cell?.textLabel?.text = "\(indexPath.row)"
+        cell?.textLabel?.text = "index namba - \(indexPath.row)"
         cell?.textLabel?.textColor = .white
         return cell!
     }
@@ -28,4 +29,13 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     @IBAction func addTapped(_ sender: UIBarButtonItem) {
     }
     
+    @IBAction func signOutTapped(_ sender: UIBarButtonItem) {
+        do {
+        try Auth.auth().signOut()
+        } catch {
+            print(error.localizedDescription)
+        }
+      dismiss(animated: true, completion: nil)
+    
+    }
 }

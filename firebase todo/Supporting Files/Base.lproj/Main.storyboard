@@ -71,7 +71,6 @@
                                                 </buttonConfiguration>
                                                 <connections>
                                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FbU-cd-jxN"/>
-                                                    <segue destination="xgm-OL-w1e" kind="show" identifier="tasksSegue" id="ESe-Py-IP6"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fku-YV-XxK">
@@ -113,6 +112,7 @@
                         <outlet property="emaiTextField" destination="eWB-j3-eTb" id="OQR-9D-i3f"/>
                         <outlet property="passwordtextField" destination="x18-9j-7F8" id="xMZ-hB-Agu"/>
                         <outlet property="warnLabel" destination="wPY-Im-pEB" id="VUw-54-2KP"/>
+                        <segue destination="xgm-OL-w1e" kind="show" identifier="tasksSegue" id="UZx-g8-che"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -142,6 +142,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TlH-xi-WCc" id="DX3-44-XCO">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" systemColor="labelColor"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -164,6 +165,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="F7r-f8-v1G">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="vcV-dc-f5Z">
+                            <connections>
+                                <action selector="signOutTapped:" destination="HzC-WU-SPV" id="UKo-ZP-IzY"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="OJX-vg-MLq">
                             <connections>
                                 <action selector="addTapped:" destination="HzC-WU-SPV" id="RU3-Ae-mjZ"/>
@@ -199,6 +205,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
