@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -8,28 +8,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="firebase_todo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="firebase_todo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="NZ4-nm-dn5">
-                                <rect key="frame" x="13" y="53" width="294.5" height="374.5"/>
+                                <rect key="frame" x="40.333333333333343" y="223.99999999999997" width="294.33333333333326" height="374.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="tF6-jZ-cu5">
-                                        <rect key="frame" x="0.0" y="0.0" width="294.5" height="102.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="294.33333333333331" height="102.33333333333333"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TODO FIREBASE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7l-Rv-O7n">
-                                                <rect key="frame" x="0.0" y="0.0" width="294.5" height="44.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="294.33333333333331" height="44.333333333333336"/>
                                                 <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="40"/>
                                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User does not exist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPY-Im-pEB">
-                                                <rect key="frame" x="62" y="84.5" width="170.5" height="18"/>
+                                                <rect key="frame" x="61.999999999999986" y="84.333333333333314" width="170.66666666666663" height="18"/>
                                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
@@ -37,15 +37,15 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MKo-mu-d9r">
-                                        <rect key="frame" x="0.0" y="152.5" width="294.5" height="78"/>
+                                        <rect key="frame" x="0.0" y="152.33333333333331" width="294.33333333333331" height="78"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eWB-j3-eTb">
-                                                <rect key="frame" x="0.0" y="0.0" width="294.5" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="294.33333333333331" height="34"/>
                                                 <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x18-9j-7F8">
-                                                <rect key="frame" x="0.0" y="44" width="294.5" height="34"/>
+                                                <rect key="frame" x="0.0" y="44" width="294.33333333333331" height="34"/>
                                                 <fontDescription key="fontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
@@ -58,10 +58,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dd4-UH-agR">
-                                        <rect key="frame" x="40" y="280.5" width="214.5" height="94"/>
+                                        <rect key="frame" x="39.999999999999986" y="280.33333333333331" width="214.33333333333331" height="94"/>
                                         <subviews>
                                             <button opaque="NO" alpha="0.25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edH-JP-65w">
-                                                <rect key="frame" x="0.0" y="0.0" width="214.5" height="42"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="214.33333333333334" height="42"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="LOGIN">
                                                     <backgroundConfiguration key="background">
@@ -69,14 +69,21 @@
                                                     </backgroundConfiguration>
                                                     <fontDescription key="titleFontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="25"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FbU-cd-jxN"/>
+                                                    <segue destination="xgm-OL-w1e" kind="show" identifier="tasksSegue" id="ESe-Py-IP6"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fku-YV-XxK">
-                                                <rect key="frame" x="0.0" y="52" width="214.5" height="42"/>
+                                                <rect key="frame" x="0.0" y="52.000000000000057" width="214.33333333333334" height="42"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Register">
                                                     <fontDescription key="titleFontDescription" name="TamilSangamMN" family="Tamil Sangam MN" pointSize="25"/>
                                                     <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="registerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6sv-0b-Dwp"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -102,10 +109,93 @@
                             <constraint firstItem="NZ4-nm-dn5" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xhq-kq-Lmz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emaiTextField" destination="eWB-j3-eTb" id="OQR-9D-i3f"/>
+                        <outlet property="passwordtextField" destination="x18-9j-7F8" id="xMZ-hB-Agu"/>
+                        <outlet property="warnLabel" destination="wPY-Im-pEB" id="VUw-54-2KP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="128.57142857142856"/>
+            <point key="canvasLocation" x="305" y="155"/>
+        </scene>
+        <!--Tasks-->
+        <scene sceneID="k0Q-EG-bVq">
+            <objects>
+                <viewController id="HzC-WU-SPV" customClass="TasksViewController" customModule="firebase_todo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zIv-O4-0yp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kdo-qp-p5a">
+                                <rect key="frame" x="0.0" y="56" width="375" height="702"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="7ly-u9-blU"/>
+                                </constraints>
+                                <color key="separatorColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="TlH-xi-WCc">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="TlH-xi-WCc" id="DX3-44-XCO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="HzC-WU-SPV" id="lDy-eQ-XHs"/>
+                                    <outlet property="delegate" destination="HzC-WU-SPV" id="27t-xK-ZcX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UnD-Vd-XXk"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kdo-qp-p5a" firstAttribute="top" secondItem="UnD-Vd-XXk" secondAttribute="top" id="72y-Y5-neN"/>
+                            <constraint firstItem="UnD-Vd-XXk" firstAttribute="bottom" secondItem="Kdo-qp-p5a" secondAttribute="bottom" id="HbP-BO-s9r"/>
+                            <constraint firstItem="Kdo-qp-p5a" firstAttribute="top" secondItem="UnD-Vd-XXk" secondAttribute="top" id="JWG-2Q-Bmw"/>
+                            <constraint firstItem="Kdo-qp-p5a" firstAttribute="trailing" secondItem="UnD-Vd-XXk" secondAttribute="trailing" id="Vdi-OZ-Gw9"/>
+                            <constraint firstItem="Kdo-qp-p5a" firstAttribute="bottom" secondItem="UnD-Vd-XXk" secondAttribute="bottom" id="m3q-xI-vHV"/>
+                            <constraint firstItem="Kdo-qp-p5a" firstAttribute="leading" secondItem="UnD-Vd-XXk" secondAttribute="leading" id="o4i-Do-9MX"/>
+                            <constraint firstItem="Kdo-qp-p5a" firstAttribute="leading" secondItem="UnD-Vd-XXk" secondAttribute="leading" id="xIP-Mp-Hpq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Tasks" id="F7r-f8-v1G">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="OJX-vg-MLq">
+                            <connections>
+                                <action selector="addTapped:" destination="HzC-WU-SPV" id="RU3-Ae-mjZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Kdo-qp-p5a" id="vHB-CE-6zZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bif-ZR-UYy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2092" y="217"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jjz-6o-MTD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xgm-OL-w1e" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="AdS-TI-yxC"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p8H-So-xGJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HzC-WU-SPV" kind="relationship" relationship="rootViewController" id="Olm-HP-3x0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXj-ew-YM5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240.8" y="176.60098522167488"/>
         </scene>
     </scenes>
     <resources>
@@ -113,6 +203,9 @@
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemTealColor">
